@@ -6,9 +6,12 @@ Page({
     data: {
 
     },
-
+    onTap() {
+        this.side.openSide();
+    },
+    closeSide() {},
     onLoad: function() {
-
+        this.side = this.selectComponent("#side");
     },
 
 })

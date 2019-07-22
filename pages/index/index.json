@@ -1,3 +1,5 @@
 {
-  "usingComponents": {}
+    "usingComponents": {
+        "side": "../../../components/side/index"
+    }
 }

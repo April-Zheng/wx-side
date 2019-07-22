@@ -1,0 +1,15 @@
+<!-- components/side/index.wxml -->
+<view wx:if="{{mask}}" class="side-mask" style="display:{{maskDisplay}};" bindtap="colseSide" catchtouchmove='preventTouchMove'></view>
+<view class="side-board" style="background:{{background}};right: {{type == 'left' ?  sideRight:''}};left: {{type == 'right' ? sideLeft:''}};width: {{sideWidth}};height:{{sideHeight}};" animation="{{sideAnimation}}" bindtouchstart="touchStart" bindtouchmove="touchMove" bindtouchend="touchEnd">
+  <scroll-view scroll-y style="width: {{sideWidth}};height:{{sideHeight}};">
+    <view wx:if="{{header}}" class="side-header">
+      <view class="side-name">{{name}}</view>
+      <view bindtap="colseSide" class="icon-clear">
+        <icon type="clear" size="20" />
+      </view>
+    </view>
+    <view class="side-content">
+      <slot name='content'></slot>
+    </view>
+  </scroll-view>
+</view>

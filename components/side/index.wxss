@@ -1,0 +1,51 @@
+/* components/side/index.wxss */
+
+.side-mask {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 3000;
+}
+
+.side-board {
+    position: fixed;
+    top: 0;
+    background: #f8f8f8;
+    z-index: 3999;
+    display: flex;
+    flex-direction: column;
+}
+
+.side-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+    padding: 10px 0;
+    border-bottom: 1px solid #f8f8f8;
+}
+
+.icon-clear {
+    margin: 0 20px;
+}
+
+.side-name {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 20px;
+}
+
+.side-content {
+    margin: 0 10px;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    color: transparent;
+}

@@ -1,1 +1,7 @@
 <!-- index.wxml -->
+<button size="mini" class="btn" type="primary" bindtap="onTap">open</button>
+<side id="side" type='left' name="test" bind:close="closeSide">
+  <view slot="content">
+    <text>test</text>
+  </view>
+</side>
